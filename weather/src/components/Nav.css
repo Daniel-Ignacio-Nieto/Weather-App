@@ -1,0 +1,20 @@
+#logoHenry {
+  margin-right: 20px;
+}
+
+.home {
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  gap: 15px;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+}
+
+.home:hover {
+  color: powderblue;
+  text-decoration: none;
+}
+
+.b {
+  background-color: transparent;
+}

@@ -1,0 +1,57 @@
+/* .card {
+  margin: 20px;
+  width: 18rem;
+}
+
+.card-title {
+  margin-bottom: 15px;
+}
+
+#closeIcon {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 8px;
+  margin-top: 8px;
+}
+
+.card-body {
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+} */
+
+
+.bigBox { 
+  display: inline-block;                  
+  position: relative;
+  border: 1px solid black;
+  padding: 20px;  /* espacio entre contenido y borde */
+  margin: 20px;   /* espacio entre elementos */
+  background: rgba(225,225,225,0.87); /* colores in ingles y alfa transparencia */
+  transition: all 0.3s;   /* duracion de transicion de evento */
+}
+
+.bigBox:hover {                 /* evento de mause encima */
+  background: rgba(225,225,225,1);
+  transform: scale(1.1) translate(20px, -20px);/* transformar un elemento, escala(110%=1.1) y desplazamiento(eje x, exe y en pixeles) */
+  box-shadow: -10px 20px 30px black;/* sombra de caja, desplazamiento(eje x eje y desenfoque de sombra en pixeles el color */
+  
+}
+
+#button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 0px 5px;
+}
+
+.temp {
+  display: block;
+  align-items: center;
+}
+
+#details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;/* separa los hijos flex */
+}

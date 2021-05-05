@@ -1,0 +1,17 @@
+.form {
+    margin: 10px;
+}
+
+.SearchBar {
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+.bu {
+    padding: 3px 10px;
+}
+
+.ba {
+    vertical-align: inherit;
+    background-color: rgba(40, 167, 60, 0.7);
+}
