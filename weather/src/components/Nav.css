@@ -3,11 +3,9 @@
 }
 
 .home {
-  color: rgba(255, 255, 255, 1);
-  display: flex;
-  gap: 15px;
-  padding-top: .3125rem;
-  padding-bottom: .3125rem;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .home:hover {
@@ -17,4 +15,15 @@
 
 .b {
   background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+}
+
+.nav-Add > a {
+  margin: 0px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
 }

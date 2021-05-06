@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Route } from "react-router-dom";
 import './App.css';
-import Cards from './components/Cards.jsx';
 import Nav from './components/Nav.jsx';
+import Main from "./components/main.jsx";
 
 
 function App() {
@@ -46,7 +46,7 @@ function App() {
   return (
     <div className="App">
       <Route path="/" render={() => <Nav onSearch={onSearch} />} />
-      <Route path="/" render={() => <Cards onClose={onClose} cities={cities} />} />
+      <Route path="/" render={() => <Main onClose={onClose} cities={cities} />} />
 
     </div>
   );

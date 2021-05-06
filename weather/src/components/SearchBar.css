@@ -1,17 +1,19 @@
 .form {
     margin: 10px;
+    padding: 10px;
+    background-color: rgb(17, 81, 44, 0.7);
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 
-.SearchBar {
+.SearchBar-Container {
     display: inline-flex;
     margin-right: 10px;
+    transition: border-color .2s linear,box-shadow .2s linear;
+    border-color: antiquewhite;
 }
 
-.bu {
-    padding: 3px 10px;
-}
-
-.ba {
-    vertical-align: inherit;
-    background-color: rgba(40, 167, 60, 0.7);
+.Search-Button {
+    padding: 10px;
 }
