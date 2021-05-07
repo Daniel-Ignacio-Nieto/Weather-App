@@ -10,7 +10,7 @@ import DetailCity from "./detail-city";
 const Main = ({ cities, onClose }) => {
 
     return (
-        <div className="">
+        <div className="Main-Container">
             <Route exact path="/" render={() => <Cards cities={cities} onClose={onClose} />} />
             <Route exact path="/about" component={About} />
             <Route exact path="/credits" component={Credits} />

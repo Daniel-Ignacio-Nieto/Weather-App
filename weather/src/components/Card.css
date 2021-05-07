@@ -3,10 +3,6 @@
   width: 18rem;
 }
 
-.card-title {
-  margin-bottom: 15px;
-}
-
 #closeIcon {
   display: flex;
   justify-content: flex-end;
@@ -23,25 +19,32 @@
 .bigBox { 
   display: inline-block;                  
   position: relative;
-  border: 1px solid black;
+  border-radius: 10px;
   padding: 20px;  /* espacio entre contenido y borde */
   margin: 20px;   /* espacio entre elementos */
-  background: rgba(225,225,225,0.87); /* colores in ingles y alfa transparencia */
+  background-color: rgb(17, 25, 36, 0.5); /* colores in ingles y alfa transparencia */
   transition: all 0.3s;   /* duracion de transicion de evento */
 }
 
 .bigBox:hover {                 /* evento de mause encima */
-  background: rgba(225,225,225,1);
-  transform: scale(1.1) translate(20px, -20px);/* transformar un elemento, escala(110%=1.1) y desplazamiento(eje x, exe y en pixeles) */
-  box-shadow: -10px 20px 30px black;/* sombra de caja, desplazamiento(eje x eje y desenfoque de sombra en pixeles el color */
+  background-color: rgb(34, 50, 65, 0.9);
+  transform: scale(1.1) translate(0px, -10px);/* transformar un elemento, escala(110%=1.1) y desplazamiento(eje x, exe y en pixeles) */
+  box-shadow: 0px 10px 20px black;/* sombra de caja, desplazamiento(eje x eje y desenfoque de sombra en pixeles el color */
   
 }
 
 #button {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  padding: 0px 5px;
+position: absolute;
+top: 10px;
+right: 10px;
+padding: 2px 8px;
+background-color: darkred;
+border-radius: 2px;
+border: none;
+}
+
+#button:hover {
+  background-color: firebrick;
 }
 
 .temp {
@@ -54,4 +57,21 @@
   align-items: center;
   justify-content: center;
   gap: 15px;/* separa los hijos flex */
+  font-size: 17px;
+}
+
+.card-title {
+  font-size: 20px;
+  margin: 20px 0px;
+}
+
+#detail-btn {
+  padding: 7px 10px;
+  background-color: transparent;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+}
+
+#detail-btn:hover {
+  background-color: rgb(31, 59, 96, 0.5);
 }

@@ -7,7 +7,7 @@ export default function Card({ min, max, name, img, onClose, id }) {
   return (
     <div className="bigBox">
       <div>
-        <button id="button" onClick={onClose} className="btn btn-danger">X</button>
+        <button id="button" onClick={onClose} >X</button>
       </div>
       <div>
         <h5 className="card-title">{name}</h5>
@@ -22,7 +22,9 @@ export default function Card({ min, max, name, img, onClose, id }) {
         <img className="iconoClima" src={"http://openweathermap.org/img/wn/" + img + "@2x.png"} width="80" height="80" alt="NO HAY IMAGEN" />
       </div>
       <div className="show-details">
-        <button className="detail-btn"><Link to={`/city/${id}`}>Detalles</Link></button>
+        <Link to={`/city/${id}`}>
+          <button id="detail-btn">Ver Detalles</button>
+        </Link>
       </div>
     </div>
   );

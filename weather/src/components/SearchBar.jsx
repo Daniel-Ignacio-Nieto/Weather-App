@@ -5,14 +5,15 @@ export default function SearchBar({ onSearch }) {
   const [city, setCity] = useState("");
   return (
 
-    <form className="Searchbar-Container" onSubmit={(e) => {
+    <form className="Searchbar-Form" onSubmit={(e) => {
       e.preventDefault();
       onSearch(city);
+      setCity("")
     }}>
       <input
-        className="form"
+        className="Searchbar-Input"
         type="text"
-        placeholder="Ciudad..."
+        placeholder="Ejemplo: Córdoba"
         value={city}
         onChange={e => setCity(e.target.value)}
       />

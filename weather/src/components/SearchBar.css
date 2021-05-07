@@ -1,19 +1,33 @@
-.form {
+.Searchbar-Input {
     margin: 10px;
     padding: 10px;
     background-color: rgb(17, 81, 44, 0.7);
     color: white;
     border: none;
     border-radius: 5px;
+    text-transform: uppercase;
 }
 
-.SearchBar-Container {
+.Searchbar-Input:hover {
+    background-color: rgba(22, 99, 54, 0.7);
+    transition: .5s;
+}
+
+.SearchBar-Form {
     display: inline-flex;
     margin-right: 10px;
-    transition: border-color .2s linear,box-shadow .2s linear;
-    border-color: antiquewhite;
 }
 
 .Search-Button {
-    padding: 10px;
+    padding: 9px 10px;
+    border: none;
+    background-color: rgb(0, 162, 39, 0.5);
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.Search-Button:hover {
+    background-color: rgba(0, 206, 48, 0.616);
+    cursor: pointer;
+    transition: .5s;
 }

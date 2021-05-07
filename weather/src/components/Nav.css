@@ -6,11 +6,13 @@
   text-decoration: none;
   font-size: 25px;
   font-weight: bold;
+  color: mediumseagreen;
 }
 
 .home:hover {
-  color: powderblue;
+  color: mediumspringgreen;
   text-decoration: none;
+  transition: .5s;
 }
 
 .b {
@@ -26,4 +28,12 @@
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
+  color: darkseagreen;
+  padding: 1px 10px;
+  border-radius: 5px;
+}
+
+.nav-Add > a:hover {
+  background-color: rgb(17, 185, 34, 0.1);
+  transition: .5s;
 }
