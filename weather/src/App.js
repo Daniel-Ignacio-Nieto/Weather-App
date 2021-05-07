@@ -7,7 +7,7 @@ import Main from "./components/main.jsx";
 
 function App() {
   const [cities, setCities] = useState([]);
-  const apiKey = '4ae2636d8dfbdc3044bede63951a019b';
+  const apiKey = process.env.APY_KEY;
 
 
   function onSearch(ciudad) {
