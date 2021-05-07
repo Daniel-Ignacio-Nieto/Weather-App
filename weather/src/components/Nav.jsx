@@ -4,7 +4,7 @@ import './Nav.css';
 
 function Nav({ onSearch }) {
   return (
-    <div>
+    <div className="Nav-Container-M">
       <nav className="navbar b">
         <a className="home" href="/">
           Weather App

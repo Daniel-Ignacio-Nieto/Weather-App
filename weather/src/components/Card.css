@@ -19,6 +19,7 @@
 .bigBox { 
   display: inline-block;                  
   position: relative;
+  width: 28vh;
   border-radius: 10px;
   padding: 20px;  /* espacio entre contenido y borde */
   margin: 20px;   /* espacio entre elementos */

@@ -4,9 +4,10 @@
 
 .home {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 35px;
   font-weight: bold;
   color: mediumseagreen;
+  text-shadow: 1px 1px 5px black;
 }
 
 .home:hover {
@@ -28,12 +29,36 @@
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
-  color: darkseagreen;
+  color: mediumseagreen;
   padding: 1px 10px;
   border-radius: 5px;
+  text-shadow: 1px 1px 5px black;
 }
 
 .nav-Add > a:hover {
   background-color: rgb(17, 185, 34, 0.1);
   transition: .5s;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-Add > a {
+    margin: 0px 10px;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .home {
+    font-size: 30px;
+  }
+
+  .b {
+    display: flow-root;
+  }
+
+  .nav-Add {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+  }
 }

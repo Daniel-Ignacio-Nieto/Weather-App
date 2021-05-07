@@ -3,3 +3,41 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.Intro-Container-M {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Intro-Container {
+  text-align: left;
+  margin: 50px 90px;
+  text-shadow: 1px 1px 5px black;
+}
+
+.Intro-Container > h2 {
+  font-size: 30px;
+}
+
+.Intro-Container > h2 > span {
+  color: mediumseagreen;
+  
+}
+
+.Intro-Container > p {
+  font-size: 25px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .Intro-Container-M {
+    justify-content: center;
+  }
+
+  .Intro-Container {
+    margin: 0;
+    width: 75%;
+  }
+
+}

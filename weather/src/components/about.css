@@ -33,3 +33,9 @@
 .About-P-a:hover {
     color: mediumspringgreen;
 }
+
+@media screen and (max-width: 650px) {
+    .About-Container > h2 {
+        font-size: 30px;
+    }
+}

@@ -4,7 +4,6 @@ import './SearchBar.css';
 export default function SearchBar({ onSearch }) {
   const [city, setCity] = useState("");
   return (
-
     <form className="Searchbar-Form" onSubmit={(e) => {
       e.preventDefault();
       onSearch(city);

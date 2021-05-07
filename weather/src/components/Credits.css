@@ -3,6 +3,10 @@
     justify-content: center;
 }
 
+.Credits-Container {
+    width: 50%;
+}
+
 .Credits-Container > h2 {
     font-size: 30px;
 }
@@ -22,4 +26,16 @@
 
 .Credits-P-a:hover {
     color: mediumspringgreen;
+}
+
+@media screen and (max-width: 1200px) {
+    .Credits-Container {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .Credits-Container {
+        width: 75%;
+    }
 }
