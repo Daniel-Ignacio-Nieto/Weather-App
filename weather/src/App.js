@@ -3,18 +3,18 @@ import { Route } from "react-router-dom";
 import './App.css';
 import Nav from './components/Nav.jsx';
 import Main from "./components/main.jsx";
+import Swal from "sweetalert2";
 
 
 function App() {
   const [cities, setCities] = useState([]);
-  const apiKey = process.env.APY_KEY;
+  const apiKey = `4ae2636d8dfbdc3044bede63951a019b`;
 
 
   function onSearch(ciudad) {
     fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`)
       .then(r => r.json())
       .then((recurso) => {
-        console.log(recurso, "soy la api")
         if (recurso.main !== undefined) {
           const ciudad = {
             min: Math.round(recurso.main.temp_min),
@@ -31,12 +31,20 @@ function App() {
           };
           var cityFound = cities.find((elem) => elem.id === ciudad.id)
           if (cityFound) {
-            alert("La ciudad ya está agregada")
+            Swal.fire(
+              "La ciudad ya está agregada",
+              "",
+              "info"
+            );
           } else {
             setCities(oldCities => [...oldCities, ciudad]);
           }
         } else {
-          alert("Ciudad no encontrada");
+          Swal.fire(
+            "Opss, Ciudad no encontrada",
+            `Por favor, ingresa otra ciudad o verifica que este bien escrita`,
+            "error"
+          );
         }
       });
   }

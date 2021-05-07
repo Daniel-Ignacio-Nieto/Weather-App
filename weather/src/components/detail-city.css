@@ -17,6 +17,7 @@
     border: 1px solid darkgray;
     border-radius: 5px;
     font-weight: bold;
+    color: white;
 }
 
 #Detail-C-Btn:hover {

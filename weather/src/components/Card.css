@@ -28,7 +28,7 @@
 }
 
 .bigBox:hover {                 /* evento de mause encima */
-  background-color: rgb(34, 50, 65, 0.9);
+  background-color: rgb(37, 56, 73, 0.9);
   transform: scale(1.1) translate(0px, -10px);/* transformar un elemento, escala(110%=1.1) y desplazamiento(eje x, exe y en pixeles) */
   box-shadow: 0px 10px 20px black;/* sombra de caja, desplazamiento(eje x eje y desenfoque de sombra en pixeles el color */
   
@@ -42,6 +42,7 @@ padding: 2px 8px;
 background-color: darkred;
 border-radius: 2px;
 border: none;
+color: darkgrey;
 }
 
 #button:hover {
@@ -71,8 +72,9 @@ border: none;
   background-color: transparent;
   border: 1px solid darkgray;
   border-radius: 5px;
+  color: white;
 }
 
 #detail-btn:hover {
-  background-color: rgb(31, 59, 96, 0.5);
+  background-color: rgb(40, 78, 130, 0.5);
 }
